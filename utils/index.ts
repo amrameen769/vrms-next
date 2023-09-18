@@ -10,9 +10,7 @@ export async function fetchCars({manufacturer, year, model, fuel, limit}: Filter
         headers
     })
 
-    const result = await response.json()
-
-    return result
+    return await response.json()
 }
 
 export const calculateCarRent = (city_mpg: number, year: number) => {
@@ -48,6 +46,5 @@ export const generateCarImageUrl = (car: CarProps, angle?: string) => {
 export const updateSearchParams = (type: string, value: string) => {
     const searchParams = new URLSearchParams(window.location.search)
     searchParams.set(type, value)
-    const newPathName = `${window.location.pathname}?${searchParams.toString()}`
-    return newPathName
+    return `${window.location.pathname}?${searchParams.toString()}`
 }
