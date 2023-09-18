@@ -42,7 +42,7 @@ const CarCard = ({car}: CarCardPropTypes) => {
             </div>
             <div className={"relative flex w-full mt-2"}>
                 <div className={"flex group-hover:invisible w-full justify-between text-gray"}>
-                    <div className={"flex flex-col justify-center items-center gap-2"}>
+                    <div className={"flex flex-col justify-center items-center gap-2 h-10 w-10"}>
                         <Image
                             src={"/steering-wheel.svg"}
                             width={20}
@@ -53,7 +53,7 @@ const CarCard = ({car}: CarCardPropTypes) => {
                             {transmission === "a" ? "Automatic" : "Manual"}
                         </p>
                     </div>
-                    <div className={"flex flex-col justify-center items-center gap-2"}>
+                    <div className={"flex flex-col justify-center items-center gap-2 h-10 w-10"}>
                         <Image
                             src={"/tyre.svg"}
                             width={20}
@@ -64,7 +64,7 @@ const CarCard = ({car}: CarCardPropTypes) => {
                             {drive.toUpperCase()}
                         </p>
                     </div>
-                    <div className={"flex flex-col justify-center items-center gap-2"}>
+                    <div className={"flex flex-col justify-center items-center gap-2 h-10 w-10"}>
                         <Image
                             src={"/gas.svg"}
                             width={20}
